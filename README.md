@@ -98,5 +98,5 @@ java -cp out br.com.lojinha.Main --console --falha
 
 ## Diagramas
 
-- Diagrama de atividades: [docs/diagrams/atividade-lojinha.svg](/Users/winistonalle/Desktop/Diagrama de atividades/docs/diagrams/Diagrama de Atividades UML.png)
+- Diagrama de atividades: 
 - DER: [docs/diagrams/der-lojinha.svg](/Users/winistonalle/Desktop/atividade-lojinha/docs/diagrams/der-lojinha.svg)
