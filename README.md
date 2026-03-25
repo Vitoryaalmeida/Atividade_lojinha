@@ -7,7 +7,7 @@ Simulação de uma lojinha online baseada em uma arquitetura cliente-servidor mo
 ```text
 .
 ├── docs/diagrams
-│   ├── atividade-lojinha.svg
+│   ├── Diagrama de atividades UML.png
 │   └── der-lojinha.svg
 └── src/br/com/lojinha
     ├── Main.java
