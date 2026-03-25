@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #2d2d2d; }
+      .entity-title { font: 700 18px Arial, sans-serif; fill: #7a4b14; }
+      .field { font: 15px Arial, sans-serif; fill: #2d2d2d; }
+      .pkfk { font: 700 14px Arial, sans-serif; fill: #7a4b14; }
+      .entity { fill: #fff8ef; stroke: #d28a3d; stroke-width: 2; rx: 12; ry: 12; }
+      .header { fill: #f7d3a3; stroke: #d28a3d; stroke-width: 2; rx: 12; ry: 12; }
+      .line { stroke: #4a4a4a; stroke-width: 2.2; fill: none; }
+      .card { font: 700 16px Arial, sans-serif; fill: #2d2d2d; }
+    </style>
+  </defs>
+
+  <text x="395" y="45" class="title">Diagrama Entidade-Relacionamento - Lojinha Online</text>
+
+  <g transform="translate(60,120)">
+    <rect width="240" height="220" class="entity"/>
+    <rect width="240" height="46" class="header"/>
+    <text x="85" y="30" class="entity-title">CLIENTE</text>
+    <text x="18" y="74" class="pkfk">PK</text><text x="55" y="74" class="field">id_cliente</text>
+    <text x="55" y="108" class="field">nome</text>
+    <text x="55" y="142" class="field">email</text>
+    <text x="55" y="176" class="field">senha_hash</text>
+  </g>
+
+  <g transform="translate(380,120)">
+    <rect width="240" height="250" class="entity"/>
+    <rect width="240" height="46" class="header"/>
+    <text x="92" y="30" class="entity-title">PEDIDO</text>
+    <text x="18" y="74" class="pkfk">PK</text><text x="55" y="74" class="field">id_pedido</text>
+    <text x="55" y="108" class="field">data_pedido</text>
+    <text x="55" y="142" class="field">status_pedido</text>
+    <text x="55" y="176" class="field">valor_total</text>
+    <text x="18" y="210" class="pkfk">FK</text><text x="55" y="210" class="field">id_cliente</text>
+  </g>
+
+  <g transform="translate(700,120)">
+    <rect width="260" height="280" class="entity"/>
+    <rect width="260" height="46" class="header"/>
+    <text x="78" y="30" class="entity-title">ITEM_PEDIDO</text>
+    <text x="18" y="74" class="pkfk">PK</text><text x="55" y="74" class="field">id_item</text>
+    <text x="55" y="108" class="field">quantidade</text>
+    <text x="55" y="142" class="field">preco_unitario</text>
+    <text x="18" y="176" class="pkfk">FK</text><text x="55" y="176" class="field">id_pedido</text>
+    <text x="18" y="210" class="pkfk">FK</text><text x="55" y="210" class="field">id_produto</text>
+  </g>
+
+  <g transform="translate(380,470)">
+    <rect width="240" height="220" class="entity"/>
+    <rect width="240" height="46" class="header"/>
+    <text x="70" y="30" class="entity-title">PAGAMENTO</text>
+    <text x="18" y="74" class="pkfk">PK</text><text x="55" y="74" class="field">id_pagamento</text>
+    <text x="55" y="108" class="field">tipo_pagamento</text>
+    <text x="55" y="142" class="field">status_pagamento</text>
+    <text x="18" y="176" class="pkfk">FK</text><text x="55" y="176" class="field">id_pedido</text>
+  </g>
+
+  <g transform="translate(820,500)">
+    <rect width="240" height="220" class="entity"/>
+    <rect width="240" height="46" class="header"/>
+    <text x="82" y="30" class="entity-title">PRODUTO</text>
+    <text x="18" y="74" class="pkfk">PK</text><text x="55" y="74" class="field">id_produto</text>
+    <text x="55" y="108" class="field">nome</text>
+    <text x="55" y="142" class="field">descricao</text>
+    <text x="55" y="176" class="field">preco</text>
+    <text x="55" y="210" class="field">estoque</text>
+  </g>
+
+  <path d="M300 230 L380 230" class="line"/>
+  <text x="325" y="215" class="card">1</text>
+  <text x="350" y="215" class="card">N</text>
+
+  <path d="M620 250 L700 250" class="line"/>
+  <text x="645" y="235" class="card">1</text>
+  <text x="675" y="235" class="card">N</text>
+
+  <path d="M500 370 L500 470" class="line"/>
+  <text x="484" y="425" class="card">1 : 1</text>
+
+  <path d="M830 500 L910 400" class="line"/>
+  <text x="840" y="440" class="card">1</text>
+  <text x="885" y="455" class="card">N</text>
+</svg>
