@@ -2,7 +2,7 @@
 
 Simulação de uma lojinha online baseada em uma arquitetura cliente-servidor monolítica. O projeto entrega os artefatos pedidos na atividade: diagrama de atividades, DER e código-fonte Java com processamento de pagamento via Singleton, agora com interface gráfica desktop em Swing.
 
-## Estrutura do projeto
+## Estrutura do Projeto
 
 ```text
 .
